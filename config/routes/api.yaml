@@ -1,0 +1,10 @@
+api_github_get_user:
+    path: /api/users/{login}
+    controller: App\Controller\Api\UserController::getGithubUser
+    methods: GET
+
+api_github_get_repository:
+    path: /api/repositories/{ownerLogin}/{repositoryName}
+    controller: App\Controller\Api\RepositoryController::getRepository
+    methods: GET
+
